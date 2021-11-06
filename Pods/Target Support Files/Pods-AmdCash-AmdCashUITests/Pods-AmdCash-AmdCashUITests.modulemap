@@ -1,0 +1,6 @@
+framework module Pods_AmdCash_AmdCashUITests {
+  umbrella header "Pods-AmdCash-AmdCashUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

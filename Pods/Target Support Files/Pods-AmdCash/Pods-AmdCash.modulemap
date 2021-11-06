@@ -1,0 +1,6 @@
+framework module Pods_AmdCash {
+  umbrella header "Pods-AmdCash-umbrella.h"
+
+  export *
+  module * { export * }
+}
