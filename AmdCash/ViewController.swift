@@ -36,17 +36,15 @@ class ViewController: UIViewController,ChartViewDelegate {
         pieChart.entryLabelColor = UIColor.black
         pieChart.drawEntryLabelsEnabled = false
         pieChart.usePercentValuesEnabled = true
-        pieChart.usePercentValuesEnabled = true
         pieChart.drawSlicesUnderHoleEnabled = true
-        pieChart.holeRadiusPercent = 0.58
+        pieChart.holeRadiusPercent = 0.0
         pieChart.chartDescription?.enabled = true
         pieChart.drawCenterTextEnabled = true
-        pieChart.centerAttributedText = NSAttributedString(string: "String")
-        pieChart.drawHoleEnabled = true
+        pieChart.centerAttributedText = NSAttributedString(string: "")
+        pieChart.drawHoleEnabled = false
         pieChart.rotationAngle = 0
         pieChart.rotationEnabled = true
         pieChart.highlightPerTapEnabled = true
-        view.addSubview(pieChart)
 //        pieChart.chartDescription?.enabled = false
         var entries = [ChartDataEntry]()
         entries.append(PieChartDataEntry(value: 20.0, label: "Taxi", icon: NSUIImage(named: "Taxi")))
@@ -56,10 +54,6 @@ class ViewController: UIViewController,ChartViewDelegate {
         entries.append(PieChartDataEntry(value: 30.0, label: "eating out", icon: NSUIImage(named: "eathing out" )) )
         entries.append(PieChartDataEntry(value: 20.0, label: "enterainment", icon: NSUIImage(named: "enterainment")) )
         entries.append(PieChartDataEntry(value: 40.0, label: "Food", icon: NSUIImage(named: "Food") ))
-        entries.append(PieChartDataEntry(value: 0.0, label: "gifts", icon: NSUIImage(named: "gifts")) )
-        entries.append(PieChartDataEntry(value: 0.0, label: "health", icon: NSUIImage(named: "health")) )
-        entries.append(PieChartDataEntry(value: 0.0, label: "house", icon: NSUIImage(named: "house")) )
-        entries.append(PieChartDataEntry(value: 0.0, label: "pets", icon: NSUIImage(named: "pets")) )
         entries.append(PieChartDataEntry(value: 12.0, label: "Sport", icon: NSUIImage(named: "Sport")) )
         entries.append(PieChartDataEntry(value: 19.0, label: "transport", icon: NSUIImage(named: "transport")) )
         entries.append(PieChartDataEntry(value: 28.0, label: "nail", icon: NSUIImage(named: "nail")) )
